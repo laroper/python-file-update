@@ -1,5 +1,5 @@
 # Algorithm for file update in Python
-**Descreption:** Develop an algorithm that updates a fi that identiůes the employees who can access restricted content. The restrictions are based on their IP address. There is an allow list for IP addresses permiŵed to sign into a restricted subnetwork. There is also a remove list that identiůes which employees must be removed from the allow list.
+**Description:** Develop an algorithm that updates a fi that identiůes the employees who can access restricted content. The restrictions are based on their IP address. There is an allow list for IP addresses permiŵed to sign into a restricted subnetwork. There is also a remove list that identiůes which employees must be removed from the allow list.
 
 ## Open the file that contains the allow list
 In the code block below I needed to open a file called allow_list.txt. To do this I first assign a string containing this file name to a variable called import_file. Then using the with statement along with the open function containing the parameter keyword of “r” which tells the function that the file should be read. While working in the ‘with’ statement the text is stored in a variable called file. 
