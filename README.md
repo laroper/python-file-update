@@ -1,5 +1,5 @@
 # Algorithm for file update in Python
-**Description:** Develop an algorithm that updates a fi that identiůes the employees who can access restricted content. The restrictions are based on their IP address. There is an allow list for IP addresses permiŵed to sign into a restricted subnetwork. There is also a remove list that identiůes which employees must be removed from the allow list.
+**Description:** An algorithm that updates a file that identifies employees who can access restricted content. The restrictions are based on their IP address. There is an allow list for IP addresses permitted to sign into a restricted subnetwork. There is also a remove list that identifies which employees must be removed from the allow list.
 
 ## Open the file that contains the allow list
 In the code block below I needed to open a file called `allow_list.txt`. To do this I first assign a string containing this file name to a variable called `import_file`. Then using the `with` statement along with the `open` function containing the parameter keyword of `“r”` which tells the function that the file should be read. While working in the `with` statement the text is stored in a variable called `file`. 
@@ -34,7 +34,7 @@ Next, updating the file with this revised list. To do this, I first convert the 
 ## Summary of Algorithm
 
 > [!IMPORTANT]
-> I created an algorithm that uses Python code to check whether a file of authorized IP addresses stored in a file called “allowed_list.txt” contained any unautorized IP addresses. These unauthorized IP addresses were identified on a remove list stored in a `remove_list` variable. If contained in the list those IP addresses were removed from the file containing the allow list.
+> I created an algorithm that uses Python code to check whether a file of authorized IP addresses stored in a file called “allowed_list.txt” contained any unautorized IP addresses. These unauthorized IP addresses were stored in a `remove_list` variable and checked against the allowed list. If found in the allowed list those unauthorized IP addresses were removed from the file containing the allowed IP addresses.
 > - This was done by opening the file,
 > - converting it to a string to be read,
 > - then converting this string to a list stored in a variable called `ip_addresses`.
