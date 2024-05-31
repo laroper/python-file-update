@@ -3,6 +3,9 @@
 
 ## Open the file that contains the allow list
 In the code block below I needed to open a file called allow_list.txt. To do this I first assign a string containing this file name to a variable called import_file. Then using the with statement along with the open function containing the parameter keyword of “r” which tells the function that the file should be read. While working in the ‘with’ statement the text is stored in a variable called file. 
+```py
+# /file_update_algorithm.py
+```
 
 ## Read the file contents
 To read the content of the file I had to use the .read() method to convert the contents of the “allow_list” file to a string, then store this string in a variable called ip_addresses.  
