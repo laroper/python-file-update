@@ -27,11 +27,19 @@ The code below will remove all the IP addresses from the allow list that are als
 > https://github.com/laroper/python-file-update/blob/41c274fa795714f77699c94f780dfc95d256c916/file_update_algorithm.py#L28-L35
 
 ## Update the file with the revised list of IP addresses 
-Next, updating the file with this revised list. To do this, I first convert the ip_addresses list back into a string using the .join() method. Apply .join() to the string "\n" in order to separate the elements in the file by placing them on a new line. Using another with statement with “w” argument that tells the open() function that you are writing to the file. Then utilizing the  .write() method to write over the file assigned to the import_file variable.
+Next, updating the file with this revised list. To do this, I first convert the `ip_addresses` list back into a string using the `.join()` method. Apply `.join()` to the string `"\n"` in order to separate the elements in the file by placing them on a new line. Using another with statement with `“w”` argument that tells the `open()` function that you are writing to the file. Then utilizing the `.write()` method to write over the file assigned to the `import_file` variable.
 
 > https://github.com/laroper/python-file-update/blob/41c274fa795714f77699c94f780dfc95d256c916/file_update_algorithm.py#L36-L46
 
-## Summary
-I created an algorithm that uses Python code to check whether a file of authorized IP addresses stored in a file called “allowed_list.txt” contains any IP addresses identified on the remove list, identified in a remove_list variable. If so, those IP addresses were removed from the file containing the allow list. This was done by opening the file, converting it to a string to be read, then converting this string to a list stored in a variable called ip_addresses. I then iterated through the ip_addresses list, checking if the element of remove_list was a part of the list. If it was, I applied the .remove() method to remove the element from the ip_addresses list. Once completed the .join() method was used to convert the list back to a string so it could write over the content of the allow_list.txt file.
+## Summary of Algorithm
+
+> [!IMPORTANT]
+> I created an algorithm that uses Python code to check whether a file of authorized IP addresses stored in a file called “allowed_list.txt” contained any unautorized IP addresses. These unauthorized IP addresses were identified on a remove list stored in a `remove_list` variable. If contained in the list those IP addresses were removed from the file containing the allow list.
+- This was done by opening the file,
+- converting it to a string to be read,
+- then converting this string to a list stored in a variable called `ip_addresses`.
+- The program iterated through the `ip_addresses` list, checking if the element of `remove_list` was a part of the list.
+- If it was, it applied the `.remove()` method to remove the element from the ip_addresses list.
+- Once completed the `.join()` method was used to convert the list back to a string so it could write over the content of the `allow_list.txt` file.
 
 
